@@ -2,10 +2,7 @@ package myma;
 
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.utils.TextFormat;
-import myma.managers.Manager;
 import myma.managers.childs.LoadersManager;
-
-import java.util.Objects;
 
 public class Main extends PluginBase {
 
@@ -18,7 +15,7 @@ public class Main extends PluginBase {
 
     @Override
     public void onEnable() {
-        Objects.requireNonNull(Manager.getInstance(LoadersManager.class)).onEnable();
+        (new LoadersManager()).onEnable();
         this.getLogger().notice(TextFormat.GREEN + "Plugin activé");
     }
 

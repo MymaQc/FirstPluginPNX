@@ -6,9 +6,9 @@ import myma.loaders.Loader;
 import myma.loaders.childs.CommandsLoader;
 import myma.loaders.childs.ListenersLoader;
 import myma.loaders.childs.ManagersLoader;
-import myma.managers.Manager;
+import myma.managers.IManager;
 
-public class LoadersManager implements Manager {
+public class LoadersManager implements IManager {
 
     @Override
     public void onEnable() {
